@@ -1,0 +1,12 @@
+/* Made by Noah Brayer 9/9/13 */
+#include <stdio.h>							// Includes Header File: "stdio"
+#define MilesPerKilometer 1.609334					// Defines: "Miles_Per_Kilometer"
+void main(void)								// Defines: Function: "main"
+{	double miles=0, kilometers=0;					// Declares Variable: "miles", "kilometers"
+	while(miles==0)							// Loop: "while"
+	{	printf("Enter # of Miles:>");				// Prompts Variable: "miles"
+		scanf("%lf",&miles);					// Inputs Variable: "miles"
+	}								// Ends: Loop: "while"
+	kilometers=miles*MilesPerKilometer;				// Calculates: "kilometers"
+	printf("%.3f miles is %.3f kilometers",miles,kilometers);	// Output: "kilometers"
+}									// Ends: Function: "main"

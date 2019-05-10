@@ -1,0 +1,15 @@
+/* Made by Noah Brayer 9/6/13 */
+#include <stdio.h>				// Includes header file: "stdio"
+void main(void)					// Begins function: "main"
+{	double milesDriven=0,gallonsUsed=0,mpg;	// Declares Variable: Input, Input, Calculated
+	while(milesDriven<=0)			// Loop: "while"
+	{	printf("Enter Miles Driven:>");	// Prompts Variable: "milesDriven"
+		scanf("%lf",&milesDriven);	// Inputs Variable: "milesDriven"
+	}					// Ends: Loop: "while"
+	while(gallonsUsed<=0)			// Loop: "while"
+	{	printf("Enter Gallons Used:>");	// Prompts Variable: "gallonsUsed"
+		scanf("%lf",&gallonsUsed);	// Inputs Variable: "milesDriven"
+	}					// Ends: Loop: "while"
+	mpg=milesDriven/gallonsUsed;		// Calculates: "mpg"
+	printf("Your MPG is %.2f",mpg);		// Output: "mpg"
+}						// Ends: Function: "main"

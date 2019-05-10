@@ -1,0 +1,16 @@
+/* Made by Noah Brayer 9/9/13 */
+#include <stdio.h>						// Includes header file: "stdio"
+void main(void)							// Defines: Function: "main"
+{	int n=0, first=1, second=0, next=0, c;			// Declares Variable: Input, Calculated, Calculated, Calculated, Loop
+	while((n==0) || (n>48))					// Loop: "while"
+	{	printf("Enter the number of terms:>");		// Prompts Variable: "n"
+		scanf("%d",&n);					// Inputs Variable: "n"
+	}							// Ends: Loop: "while"
+	printf("First %d terms of Fibonacci series are:>\n",n);	// Output: "n"
+	for(c=0;c<n;c++)					// Loop: "for"
+	{	next=first+second;				// Calculates: "next"
+		first=second;					// Swap of values: "first" and "second"
+		second=next;					// Swap of values: "second" and "next"
+		printf("%d\n",next);				// Output: "next"
+	}							// Ends: Loop: "for"
+}								// Ends: Function: "main"
